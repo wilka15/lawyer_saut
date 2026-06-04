@@ -174,6 +174,16 @@
             color: white;
         }
 
+        .btn-telegram {
+            background: #26A5E4;
+            color: white;
+        }
+
+        .btn-telegram:hover {
+            background: #1e8fc8;
+            transform: translateY(-2px);
+        }
+
         .hero {
             padding: 80px 0 60px;
             text-align: center;
@@ -405,6 +415,15 @@
             color: #888;
         }
 
+        .footer a {
+            color: #5865F2;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 36px;
@@ -415,6 +434,9 @@
             .header {
                 flex-direction: column;
                 text-align: center;
+            }
+            .pricing {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -431,6 +453,7 @@
                 <a href="#pricing">Тарифы</a>
                 <a href="#referral">Рефералы</a>
                 <a href="#commands">Команды</a>
+                <a href="#support">Поддержка</a>
                 <button class="theme-toggle" id="themeToggle">🌙 Тёмная</button>
                 <a href="https://discord.com/oauth2/authorize?client_id=1511081273962004681&permissions=8&scope=bot%20applications.commands" class="btn btn-primary">➕ Пригласить</a>
             </nav>
@@ -440,7 +463,8 @@
             <h1>Юридический помощник<br>для Majestic RP</h1>
             <p>Быстрый поиск по УК и ПК, ИИ-консультации, премиум-подписка и реферальная программа.</p>
             <div class="hero-buttons">
-                <a href="https://discord.com/oauth2/authorize?client_id=1511081273962004681&permissions=8&scope=bot%20applications.commands" class="btn btn-primary">➕ Пригласить на сервер</a>
+                <a href="https://discord.com/oauth2/authorize?client_id=1511081273962004681&permissions=8&scope=bot%20applications.commands" class="btn btn-primary">➕ Добавить в Discord</a>
+                <a href="https://t.me/lawyer_pay_bot" class="btn btn-telegram">⭐ Купить Premium</a>
             </div>
             <div class="bot-status">
                 <div class="status-indicator" id="statusIndicator"></div>
@@ -491,7 +515,7 @@
                 <div class="feature-card">
                     <div class="feature-icon">💎</div>
                     <h3>Премиум-подписка</h3>
-                    <p>Безлимитные запросы от 84 ₽ в месяц. Выберите срок: 30, 60, 90, 180 или 365 дней.</p>
+                    <p>Безлимитные запросы. Оплата через Telegram Stars. 50 Stars ≈ 84 ₽.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🌟</div>
@@ -511,33 +535,53 @@
             <div class="pricing">
                 <div class="pricing-card">
                     <h3>30 дней</h3>
-                    <div class="pricing-price">55 ₽</div>
+                    <div class="pricing-price">50 ⭐<br><span>≈ 84 ₽</span></div>
                     <ul class="pricing-features">
                         <li>✅ Безлимитные запросы</li>
                         <li>✅ Приоритетная поддержка</li>
                         <li>✅ Все функции бота</li>
                     </ul>
-                    <a href="#" class="btn btn-primary">Выбрать</a>
+                    <a href="https://t.me/lawyer_pay_bot" class="btn btn-primary">Выбрать</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>60 дней</h3>
+                    <div class="pricing-price">100 ⭐<br><span>≈ 168 ₽</span></div>
+                    <ul class="pricing-features">
+                        <li>✅ Безлимитные запросы</li>
+                        <li>✅ Приоритетная поддержка</li>
+                        <li>✅ Экономия 0%</li>
+                    </ul>
+                    <a href="https://t.me/lawyer_pay_bot" class="btn btn-primary">Выбрать</a>
                 </div>
                 <div class="pricing-card popular">
                     <h3>90 дней</h3>
-                    <div class="pricing-price">165 ₽</div>
+                    <div class="pricing-price">150 ⭐<br><span>≈ 252 ₽</span></div>
+                    <ul class="pricing-features">
+                        <li>✅ Безлимитные запросы</li>
+                        <li>✅ Приоритетная поддержка</li>
+                        <li>✅ Экономия 10%</li>
+                    </ul>
+                    <a href="https://t.me/lawyer_pay_bot" class="btn btn-primary">Выбрать</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>180 дней</h3>
+                    <div class="pricing-price">300 ⭐<br><span>≈ 504 ₽</span></div>
                     <ul class="pricing-features">
                         <li>✅ Безлимитные запросы</li>
                         <li>✅ Приоритетная поддержка</li>
                         <li>✅ Экономия 15%</li>
                     </ul>
-                    <a href="#" class="btn btn-primary">Выбрать</a>
+                    <a href="https://t.me/lawyer_pay_bot" class="btn btn-primary">Выбрать</a>
                 </div>
                 <div class="pricing-card">
                     <h3>365 дней</h3>
-                    <div class="pricing-price">660 ₽</div>
+                    <div class="pricing-price">600 ⭐<br><span>≈ 1008 ₽</span></div>
                     <ul class="pricing-features">
                         <li>✅ Безлимитные запросы</li>
                         <li>✅ Приоритетная поддержка</li>
-                        <li>✅ Экономия 45%</li>
+                        <li>✅ Экономия 30%</li>
                     </ul>
-                    <a href="#" class="btn btn-primary">Выбрать</a>
+                    <a href="https://t.me/lawyer_pay_bot" class="btn btn-primary">Выбрать</a>
                 </div>
             </div>
         </section>
@@ -562,8 +606,7 @@
                 <div class="command-item"><span class="command-prefix">/ук</span> убийство</div>
                 <div class="command-item"><span class="command-prefix">/пк</span> задержание</div>
                 <div class="command-item"><span class="command-prefix">/вопрос</span> Какое наказание за кражу?</div>
-                <div class="command-item"><span class="command-prefix">/купить</span></div>
-                <div class="command-item"><span class="command-prefix">/премиум статус</span></div>
+                <div class="command-item"><span class="command-prefix">/статус</span></div>
                 <div class="command-item"><span class="command-prefix">/код</span></div>
                 <div class="command-item"><span class="command-prefix">/активировать_код</span> ABC12345</div>
                 <div class="command-item"><span class="command-prefix">/разделы_ук</span></div>
@@ -572,9 +615,30 @@
             </div>
         </section>
 
+        <section id="support" class="section">
+            <h2 class="section-title"><span>Свяжитесь</span> с нами</h2>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <a href="https://t.me/lawyer_pay_bot" class="btn btn-telegram" style="font-size: 18px;">📨 Telegram бот для оплаты</a>
+                <a href="https://discord.com/oauth2/authorize?client_id=1511081273962004681&permissions=8&scope=bot%20applications.commands" class="btn btn-primary" style="font-size: 18px;">🤖 Добавить Discord бота</a>
+            </div>
+            <p style="text-align: center; margin-top: 30px; color: #aaa;">
+                По вопросам сотрудничества и поддержки:<br>
+                📧 <a href="mailto:wilka.wilkovich@yandex.ru" style="color: #5865F2;">wilka.wilkovich@yandex.ru</a>
+            </p>
+        </section>
+
         <footer class="footer">
             <p>⚖️ Lawyer Helper — юридический помощник для Majestic RP</p>
-            <p style="margin-top: 10px; font-size: 12px;">Бот создан на основе Уголовного и Процессуального кодексов штата Сан-Андреас.</p>
+            <p style="margin-top: 10px; font-size: 12px;">
+                Бот создан на основе Уголовного и Процессуального кодексов штата Сан-Андреас.
+            </p>
+            <p style="margin-top: 15px;">
+                <a href="#features">Возможности</a> •
+                <a href="#pricing">Тарифы</a> •
+                <a href="#referral">Рефералы</a> •
+                <a href="#commands">Команды</a> •
+                <a href="#support">Поддержка</a>
+            </p>
         </footer>
     </div>
 
